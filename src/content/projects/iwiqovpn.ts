@@ -25,17 +25,17 @@ export const iwiqoVPN: Project = {
       id: 'native', title: 'At home in the menu bar.',
       description: 'An interface built around the native macOS environment, rather than a separate, oversized window.',
       blocks: [{ id: 'native-interface', layout: 'split', assets: [
-        mediaSlot({ id: 'vpn-desktop', project, title: 'The macOS interface', kind: 'desktop', caption: 'Desktop / Original interface capture reserved' }),
-        mediaSlot({ id: 'vpn-menu-bar', project, title: 'Menu-bar interaction', kind: 'desktop', aspect: [4, 5], surface: 'paper', caption: 'Menu bar / Popover asset slot' }),
+        mediaSlot({ id: 'vpn-desktop', project, title: 'The macOS interface', kind: 'desktop', aspect: [4, 5], caption: 'Desktop / Original interface capture', media: { type: 'image', src: '/media/iwiqovpn/screen-marketing.jpg', alt: 'iwiqoVPN application interface showing the connection state in a compact macOS popover', width: 997, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
+        mediaSlot({ id: 'vpn-menu-bar', project, title: 'Menu-bar interaction', kind: 'desktop', aspect: [4, 5], surface: 'paper', caption: 'Menu bar / Popover interaction', media: { type: 'image', src: '/media/iwiqovpn/screen-01.jpg', alt: 'iwiqoVPN menu bar popover with connection controls and server selection', width: 997, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
       ] }],
     },
     {
       id: 'states', title: 'The information you need.',
-      description: 'One-click connection, server selection and live traffic statistics. These frames are reserved for the actual UI states, not reconstructed screens.',
+      description: 'One-click connection, server selection and live traffic statistics. These frames show the actual UI states of the native application.',
       blocks: [{ id: 'product-states', layout: 'trio', assets: [
-        mediaSlot({ id: 'vpn-connection', project, title: 'Connection state', kind: 'desktop', aspect: [4, 5] }),
-        mediaSlot({ id: 'vpn-server', project, title: 'Server selection', kind: 'desktop', aspect: [4, 5], surface: 'paper' }),
-        mediaSlot({ id: 'vpn-statistics', project, title: 'Live statistics', kind: 'desktop', aspect: [4, 5] }),
+        mediaSlot({ id: 'vpn-connection', project, title: 'Connection state', kind: 'desktop', aspect: [4, 5], caption: 'Connection / One-click connect', media: { type: 'image', src: '/media/iwiqovpn/screen-02.jpg', alt: 'iwiqoVPN connection state with one-click connect and live status indicator', width: 997, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
+        mediaSlot({ id: 'vpn-server', project, title: 'Server selection', kind: 'desktop', aspect: [4, 5], surface: 'paper', caption: 'Servers / Selection interface', media: { type: 'image', src: '/media/iwiqovpn/screen-03.jpg', alt: 'iwiqoVPN server selection interface listing available WireGuard servers', width: 996, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
+        mediaSlot({ id: 'vpn-statistics', project, title: 'Live statistics', kind: 'desktop', aspect: [4, 5], caption: 'Statistics / Traffic data asset slot' }),
       ] }],
     },
     {
