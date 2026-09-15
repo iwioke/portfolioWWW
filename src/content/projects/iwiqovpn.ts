@@ -35,7 +35,7 @@ export const iwiqoVPN: Project = {
       blocks: [{ id: 'product-states', layout: 'trio', assets: [
         mediaSlot({ id: 'vpn-connection', project, title: 'Connection state', kind: 'desktop', aspect: [4, 5], caption: 'Connection / One-click connect', media: { type: 'image', src: '/media/iwiqovpn/screen-02.jpg', alt: 'iwiqoVPN connection state with one-click connect and live status indicator', width: 997, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
         mediaSlot({ id: 'vpn-server', project, title: 'Server selection', kind: 'desktop', aspect: [4, 5], surface: 'paper', caption: 'Servers / Selection interface', media: { type: 'image', src: '/media/iwiqovpn/screen-03.jpg', alt: 'iwiqoVPN server selection interface listing available WireGuard servers', width: 996, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
-        mediaSlot({ id: 'vpn-statistics', project, title: 'Live statistics', kind: 'desktop', aspect: [4, 5], caption: 'Statistics / Traffic data asset slot' }),
+        mediaSlot({ id: 'vpn-statistics', project, title: 'Live statistics', kind: 'desktop', aspect: [4, 5], caption: 'Statistics / Traffic data', media: { type: 'image', src: '/media/iwiqovpn/screen-04.jpg', alt: 'iwiqoVPN live traffic statistics showing connection data and usage metrics', width: 996, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
       ] }],
     },
     {
@@ -56,9 +56,9 @@ export const iwiqoVPN: Project = {
     },
     {
       id: 'in-use', title: 'The product, in use.',
-      description: 'Reserved for an original screen recording. Native controls, no forced autoplay.',
+      description: 'An original screen recording of the native application. Native controls, no forced autoplay.',
       blocks: [{ id: 'product-video', layout: 'video', assets: [
-        mediaSlot({ id: 'vpn-recording', project, title: 'Product walkthrough', kind: 'video', surface: 'ink' }),
+        mediaSlot({ id: 'vpn-recording', project, title: 'Product walkthrough', kind: 'video', aspect: [9, 16], surface: 'ink', caption: 'Walkthrough / Native screen recording', media: { type: 'video', src: '/media/iwiqovpn/walkthrough.mp4', poster: '/media/iwiqovpn/walkthrough-poster.jpg', description: 'A screen recording of iwiqoVPN in use, showing the menu bar interaction, connection flow and live interface.', source: `${source}`, sourceLabel: 'Original application recording' } }),
       ] }],
     },
   ],
