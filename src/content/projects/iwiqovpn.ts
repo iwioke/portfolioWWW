@@ -40,10 +40,10 @@ export const iwiqoVPN: Project = {
     },
     {
       id: 'themes', title: 'Light. Dark. Native.',
-      description: 'The application supports both light and dark themes. Original captures will show how the interface responds to each.',
+      description: 'The application supports both light and dark themes, following the native macOS appearance. The interface adapts its surfaces, typography and accents to each mode.',
       blocks: [{ id: 'theme-pair', layout: 'duo', assets: [
-        mediaSlot({ id: 'vpn-light', project, title: 'Light interface', kind: 'desktop', aspect: [4, 5], surface: 'paper' }),
-        mediaSlot({ id: 'vpn-dark', project, title: 'Dark interface', kind: 'desktop', aspect: [4, 5], surface: 'ink' }),
+        mediaSlot({ id: 'vpn-light', project, title: 'Light interface', kind: 'desktop', aspect: [4, 5], surface: 'paper', caption: 'Theme / Light appearance', media: { type: 'image', src: '/media/iwiqovpn/screen-04.jpg', alt: 'iwiqoVPN in light mode, showing the interface with light surfaces and native macOS appearance', width: 996, height: 1200, source: `${source}`, sourceLabel: 'Original application capture' } }),
+        mediaSlot({ id: 'vpn-dark', project, title: 'Dark interface', kind: 'desktop', aspect: [16, 10], surface: 'ink', caption: 'Theme / Dark appearance', media: { type: 'image', src: '/media/iwiqovpn/screen-dark.jpg', alt: 'iwiqoVPN in dark mode, showing the interface with dark surfaces and adjusted accents', width: 1200, height: 741, source: `${source}`, sourceLabel: 'Original application capture' } }),
       ] }],
     },
     {
